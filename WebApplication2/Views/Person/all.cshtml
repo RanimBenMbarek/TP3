@@ -1,0 +1,23 @@
+﻿@model List<WebApplication2.Models.Person>
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>email</th>
+        <th>image</th>
+        <th>Country</th>
+    </tr>
+    @foreach (WebApplication2.Models.Person e in Model)
+    {
+        <tr>
+            <td>@e.id</td>
+            <td>@e.firstName</td>
+            <td>@e.lastName </td>
+            <td>@e.email</td>
+            <td> @e.image</td>
+            <td>@e.country</td>
+        </tr>
+    }
+
+</table>

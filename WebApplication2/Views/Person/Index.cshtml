@@ -1,0 +1,32 @@
+﻿@model WebApplication2.Models.Person
+@if (Model != null)
+{
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>email</th>
+            <th>image</th>
+            <th>Country</th>
+        </tr>
+
+        <tr>
+            <td>@Model.id</td>
+            <td>@Model.firstName</td>
+            <td>@Model.lastName </td>
+            <td>@Model.email</td>
+            <td> @Model.image</td>
+            <td>@Model.country</td>
+        </tr>
+
+
+    </table>
+}
+else  {
+<div class="alert">
+    Cet ID est
+    invalide
+</div>
+ }
+
